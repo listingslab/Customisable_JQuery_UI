@@ -8,55 +8,43 @@
 	$ui ['content_text'] = '#083443'; //434672
 	$ui ['btn_text'] = '#fff'; //d8dff1
 	$ui ['border'] = '#ccc'; //ff451a
-	
-	
-	$ui ['default'] = '#358489'; //883589
-	$ui ['hover'] = '#'; //b86eb9
-	$ui ['active'] = '#'; //631064
-	$ui ['highlight'] = '#'; //fffc00
-	$ui ['error'] = '#'; //cd0a0a
-	
+	$ui ['default'] = '#787878'; //883589
+	$ui ['hover'] = '#a9a9a9'; //b86eb9
+	$ui ['active'] = '#535353'; //631064
+	$ui ['highlight'] = 'yellow'; //fffc00
+	$ui ['error'] = 'red'; //cd0a0a
 ?>
 
 <style>
 	/* Dynamically change jQuery UI colours with inline CSS
 	 * Find out how here http://wp.me/P5Q8N9-1eS */
 	
-	/* Border Color */
-	.ui-widget-content {
-		border: 1px solid <?php print $ui ['border'];?>;
-	}
-	.ui-widget-header {
-		border: 1px solid <?php print $ui ['border'];?>;
-	}
-	.ui-state-default,
-	.ui-widget-content .ui-state-default,
-	.ui-widget-header .ui-state-default {
-		border: 1px solid <?php print $ui ['border'];?>;
-	}
-	.ui-state-hover,
-	.ui-widget-content .ui-state-hover,
-	.ui-widget-header .ui-state-hover,
-	.ui-state-focus,
-	.ui-widget-content .ui-state-focus,
-	.ui-widget-header .ui-state-focus {
-		border: 1px solid <?php print $ui ['border'];?>;
-	}
-	.ui-state-active,
-	.ui-widget-content .ui-state-active,
-	.ui-widget-header .ui-state-active {
-		border: 1px solid <?php print $ui ['border'];?>;
-	}
+	/* Highlight & Error */
 	.ui-state-highlight,
 	.ui-widget-content .ui-state-highlight,
 	.ui-widget-header .ui-state-highlight {
-		border: 1px solid <?php print $ui ['border'];?>;
+		background: <?php print $ui ['highlight'];?>;
 	}
+	
 	.ui-state-error,
 	.ui-widget-content .ui-state-error,
 	.ui-widget-header .ui-state-error {
-		border: 1px solid <?php print $ui ['border'];?>;
+		background: <?php print $ui ['error'];?>;
 	}
+	
+	/* Deafult, Hover & active Colours */
+	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {background: <?php print $ui ['default'];?>;}
+	.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus {background: <?php print $ui ['hover'];?>;}
+	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {background: <?php print $ui ['active'];?>;}
+	
+	/* Border Color */
+	.ui-widget-content {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-widget-header {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {border: 1px solid <?php print $ui ['border'];?>;}
+	.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error {border: 1px solid <?php print $ui ['border'];?>;}
 	/* Button Text Color */
 	.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited {color: <?php print $ui ['btn_text'];?>;}

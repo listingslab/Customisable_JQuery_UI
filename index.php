@@ -67,7 +67,21 @@ to do just that.</h3>
 	
 	
 <div id="cui_ui">
-
+<div class="ui-widget">
+	
+	<div class="ui-widget">
+	<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+		<strong>Alert:</strong> Sample ui-state-error style.</p>
+	</div>
+</div>
+	
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Hey!</strong> Sample ui-state-highlight style.</p>
+	</div>
+</div>
+<br />
 	<div id="accordion">
 		<h3>First</h3>
 		<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>

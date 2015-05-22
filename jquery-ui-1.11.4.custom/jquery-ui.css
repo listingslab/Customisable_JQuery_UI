@@ -849,7 +849,6 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	background: #883589 url("images/ui-bg_flat_0_883589_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
 .ui-state-default a,
@@ -863,7 +862,6 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	background: #b86eb9 url("images/ui-bg_flat_0_b86eb9_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
 .ui-state-hover a,
@@ -879,7 +877,6 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	background: #631064 url("images/ui-bg_flat_0_631064_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
 .ui-state-active a,
@@ -893,7 +890,6 @@ body .ui-tooltip {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	background: #fffc00 url("images/ui-bg_flat_0_fffc00_40x100.png") 50% 50% repeat-x;
 	color: #000000;
 }
 .ui-state-highlight a,
@@ -904,7 +900,6 @@ body .ui-tooltip {
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-	background: #cd0a0a url("images/ui-bg_flat_0_cd0a0a_40x100.png") 50% 50% repeat-x;
 	color: #ffffff;
 }
 .ui-state-error a,
@@ -1183,14 +1178,14 @@ body .ui-tooltip {
 
 /* Overlays */
 .ui-widget-overlay {
-	background: #000000 url("images/ui-bg_flat_0_000000_40x100.png") 50% 50% repeat-x;
+	background: #000000;
 	opacity: .3;
 	filter: Alpha(Opacity=30); /* support: IE8 */
 }
 .ui-widget-shadow {
 	margin: 0px 0 0 0px;
 	padding: 0px;
-	background: #000000 url("images/ui-bg_flat_0_000000_40x100.png") 50% 50% repeat-x;
+	background: #000000;
 	opacity: .3;
 	filter: Alpha(Opacity=30); /* support: IE8 */
 	border-radius: 0px;
