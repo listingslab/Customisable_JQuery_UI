@@ -8,7 +8,7 @@
 	$ui ['font'] = 'Arial';
 	$ui ['text'] = 'black'; // black or white
 	$ui ['icon'] = 'black'; // black or white
-	$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
+	$ui ['ui_folder'] = 'jquery-ui/';
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,13 +16,17 @@
 		<meta charset="utf-8">
 		<title>Customisable JQuery UI</title>
 		<meta name="viewport" content="width=device-width">
-		<script src="<?php print $ui ['ui_folder'];?>external/jquery/jquery.js"></script>
+		<script src="<?php print $ui ['ui_folder'];?>jquery.js"></script>
 		<script src="<?php print $ui ['ui_folder'];?>jquery-ui.js"></script>
-		<script src='spectrum/spectrum.js'></script>
-		<link rel='stylesheet' href='spectrum/spectrum.css' />
 		
+		<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+		<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+
 		<script src="cui.js"></script>
 		<link href="<?php print $ui ['ui_folder'];?>jquery-ui.css" rel="stylesheet">
+		
+		<?php include 'css.php';?>
+	
 	</head>
 	<body>
 <div id="cui">
@@ -97,16 +101,16 @@ to do just that.</h3>
 <form method="get">
 <div style="margin:15px;">
 	<p><strong>Main Colours</strong></p>
-	<input type='color' name="on" class='spectrum' value='<?php print $ui ['default'] ;?>' />
+	<input type='text' class="colour_picker" name="default" value='<?php print $ui ['default'] ;?>' />
 	Default		
 		<br />
-	<input type='color' name="off" class='spectrum' value='<?php print $ui ['hover'] ;?>' />
+	<input type='text' name="hover" value='<?php print $ui ['hover'] ;?>' />
 	Hover
 		<br />
-	<input type='color' name="over" class='spectrum' value='<?php print $ui ['active'] ;?>' />
+	<input type='text' name="active" value='<?php print $ui ['active'] ;?>' />
 	Active
 		<br />
-	<input type='color' name="border" class='spectrum' value='<?php print $ui ['border'] ;?>' />
+	<input type='text' name="border" value='<?php print $ui ['border'] ;?>' />
 	Border
 </div>
 <div style="margin:15px;">

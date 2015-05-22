@@ -10,7 +10,5 @@
 	/* Dynamically Changing jQuery UI Colours?
 	 * Want to find out how? http://wp.me/P5Q8N9-1eS
 	 */
-	body {
-		background :#0000EE;
-	}
+	
 </style>

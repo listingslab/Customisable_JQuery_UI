@@ -2,7 +2,7 @@ $(document).ready(function () {
 	try {
 		_cui_style ();
 		_cui_nav ();
-		_cui_spectrum ();
+		_cui_colorpicker ();
 		_cui_ui_widgets ();
 	}catch (err){
 		console.log ('Document.ready Error' + err);	
@@ -19,10 +19,9 @@ function _cui_ui_widgets (){
 		console.log (err);
 	}
 }
-function _cui_spectrum (){
+function _cui_colorpicker (){
 	try {
-		$('#cui .spectrum').spectrum ({
-		});
+		$('.colour_picker').ColorPicker ();
 	}catch (err){
 		console.log (err);
 	}
