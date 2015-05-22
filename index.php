@@ -1,4 +1,5 @@
 <?php
+	global $ui;
 	$ui = array ();
 	// Default (unless overridden by GET variables)
 	$ui ['default'] = '#cd1acf';
@@ -16,7 +17,7 @@
 		<meta charset="utf-8">
 		<title>Customisable JQuery UI</title>
 		<meta name="viewport" content="width=device-width">
-		<script src="<?php print $ui ['ui_folder'];?>jquery.js"></script>
+		<script src="<?php print $ui ['ui_folder'];?>external/jquery/jquery.js"></script>
 		<script src="<?php print $ui ['ui_folder'];?>jquery-ui.js"></script>
 		
 		<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
@@ -24,9 +25,7 @@
 
 		<script src="cui.js"></script>
 		<link href="<?php print $ui ['ui_folder'];?>jquery-ui.css" rel="stylesheet">
-		
 		<?php include 'css.php';?>
-	
 	</head>
 	<body>
 <div id="cui">
@@ -66,6 +65,9 @@ to do just that.</h3>
 	
 <div id="cui_right"><div class="padded">
 <a class="cui_btn" href="?dialog=show">Show Dialog</a>
+
+<div id="datepicker"></div>
+
 <div id="accordion">
 	<h3>First</h3>
 	<div>

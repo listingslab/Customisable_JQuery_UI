@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	try {
-		_cui_style ();
+		//_cui_style ();
 		_cui_nav ();
 		_cui_colorpicker ();
 		_cui_ui_widgets ();
@@ -10,6 +10,9 @@ $(document).ready(function () {
 });
 function _cui_ui_widgets (){
 	try {
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
 		$( "#accordion" ).accordion({
 			autoSize:true
 		});
@@ -21,7 +24,10 @@ function _cui_ui_widgets (){
 }
 function _cui_colorpicker (){
 	try {
-		$('.colour_picker').ColorPicker ();
+		//$('.colour_picker').ColorPicker ();
+		$('.colour_picker').ColorPicker({
+	
+		});
 	}catch (err){
 		console.log (err);
 	}
