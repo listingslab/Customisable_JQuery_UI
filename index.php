@@ -5,21 +5,7 @@ $ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
  	/*
 	 * The factory theme has these colors
 	 * which we will find and change
-	 */
-	
-	$ui ['border'] = '#'; //ff451a
- 	$ui ['highlight'] = '#'; //fffc00
-	$ui ['error'] = '#'; //cd0a0a
-	$ui ['default'] = '#'; //883589
-	$ui ['hover'] = '#'; //b86eb9
-	$ui ['active'] = '#'; //631064
-	$ui ['btn_text'] = '#'; //d8dff1
-	$ui ['content_bg'] = '#'; //f4f6fa
-	$ui ['content_text'] = '#'; //434672
-	$ui ['toolbar_bg'] = '#'; //a3a7b2
-	$ui ['toolbar_text'] = '#'; //434672
-	$ui ['icon'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
-	$ui ['font'] = 'Courier'; 	
+	 */ 	
 ?>
 <!doctype html>
 <html lang="en">
