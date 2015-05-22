@@ -23,56 +23,21 @@
 	</head>
 	<body>
 <div id="cui">
+<header>
+	<h1><a href="/">Customising a JQuery UI theme with PHP</a></h1>
+	<a class="more" href="?show=more">
+		Learn More</a>
+	<a class="github" href="https://github.com/listingslab/Customisable_JQuery_UI/" target="_blank">
+		Download</a>
+</header>
 
-<a class="more" href="?show=more">Learn More</a>
 
-<h1><a href="/">Customising a JQuery UI theme with PHP</a></h1>
-<p>Ever wished you could use PHP to change the colours of
-a jQuery UI Theme dynamically? This project does just that</p>
-
-	
-	
-	
-	<div id="cui_right">
-		<button id="button">A button element</button>
-<div class="ui-widget">
-	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
-		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
-		<strong>Hey!</strong> Sample ui-state-highlight style.</p>
-	</div>
-</div>
-<br>
-<div class="ui-widget">
-	<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
-		<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
-		<strong>Alert:</strong> Sample ui-state-error style.</p>
-	</div>
-</div>
 		
-	</div>
-	
-	
-	<div id="cui_left">
-		<form method="get">
-			<p>Configure UI Theme</p>
-			<input type="hidden" name="hidethis" value="dwqeqw" />
-			<ul>
-				<li>Default Button Background Colour</li>
-				<li>Active Button Background Colour</li>
-				<li>Over Button Background Colour</li>
-				<li>Text Colour</li>
-				<li>Icon Colour</li>
-				<li>Border Colour</li>
-				<li>Font</li>
-			</ul>
-			<input type="submit" value="Configure Now" />
-		</form>
-	</div>
-	<div style="clear:both;"></div>
-	
-	<div id="cui_foot">
-		
-		<h3>Getting Started</h3>
+<div id="cui_info"><div class="padded">
+	<h3>Ever wished you could use PHP to change the colours of
+a jQuery UI Theme dynamically? This project demonstrates how
+to do just that.</h3>
+	<h4>Getting Started</h4>
 		<p>We strip down a <a target="_blank" href="http://jqueryui.com/themeroller/">jQuery UI theme</a> 
 		to the bare essentials and change the CSS with PHP 
 		dynamically. Starting with a simple theme, 
@@ -89,11 +54,47 @@ a jQuery UI Theme dynamically? This project does just that</p>
 	<li><a href="https://bgrins.github.io/spectrum/" target="_blank">Spectrum</a>
 	 - The No Hassle jQuery Colorpicker</li>
 	</ul>
-		<h4>Download Source Code</h4>
-		<a href="https://github.com/listingslab/Customisable_JQuery_UI/archive/master.zip" target="_blank">
-		<img src="img/github_download_zip.png" alt="github_download_zip" width="148" height="30" />
-		</a>
+</div></div>
+	
+	
+<div id="cui_right"><div class="padded">
+	
+	<div class="ui-widget">
+		<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+			<strong>Hey!</strong> Sample ui-state-highlight style.</p>
+		</div>
 	</div>
+		<br>
+	<div class="ui-widget">
+		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+			<strong>Alert:</strong> Sample ui-state-error style.</p>
+		</div>
+	</div>
+</div></div>
+	
+	
+<div id="cui_left"><div class="padded">
+	<form method="get">
+		<p>Configure UI Theme</p>
+		<input type="hidden" name="hidethis" value="dwqeqw" />
+		<ul>
+			<li>Default Button Background Colour</li>
+			<li>Active Button Background Colour</li>
+			<li>Over Button Background Colour</li>
+			<li>Text Colour</li>
+			<li>Icon Colour</li>
+			<li>Border Colour</li>
+			<li>Font</li>
+		</ul>
+		<input type="submit" value="Configure Now" />
+	</form>
+</div></div>
+	
+	<div style="clear:both;"></div>
+		
+	
 </div>
 	</body>
 </html>

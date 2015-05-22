@@ -1,38 +1,48 @@
 $(document).ready(function () {
 	try {
 		_cui ();
-		_cui_foot ();
+		_cui_nav ();
 	}catch (err){
 		console.log ('Document.ready Error' + err);	
 	}
 });
-
 function _cui (){
 	try {
 		console.log ('Customising a JQuery UI theme with PHP');
+		_cui_css ($('#cui'), 'font-family', 'Arial' );
 		_cui_css ($('#cui'), 'width', '90%' );
 		_cui_css ($('#cui'), 'margin', 'auto' );
+		_cui_css ($('#cui h1'), 'font-weight', 'normal' );
+		_cui_css ($('#cui h2'), 'font-weight', 'normal' );
+		_cui_css ($('#cui h3'), 'font-weight', 'normal' );
+		_cui_css ($('#cui h4'), 'font-weight', 'normal' );
 		_cui_css ($('#cui a'), 'text-decoration', 'none' );
-		_cui_css ($('#cui'), 'font-family', 'Arial' );
+		_cui_css ($('#cui header'), 'margin-bottom', '25px' );
 		
 		_cui_css ($('#cui #cui_left'), 'float', 'left' );
-		_cui_css ($('#cui #cui_left'), 'width', '49%' );
-		//_cui_css ($('#cui #cui_left'), 'border', '1px solid black' );
+		_cui_css ($('#cui #cui_left'), 'width', '39%' );
 		_cui_css ($('#cui #cui_right'), 'float', 'right' );
-		_cui_css ($('#cui #cui_right'), 'width', '49%' );
-		//_cui_css ($('#cui #cui_right'), 'border', '1px solid black' );
+		_cui_css ($('#cui #cui_right'), 'width', '59%' );
+		
+		
+		_cui_css ($('#cui .padded'), 'margin', '10px' );
+		_cui_css ($('#cui #cui_info'), 'margin-top', '15px' );
+		_cui_css ($('#cui #cui_info'), 'background', '#e7e7e7' );
+		_cui_css ($('#cui #cui_info'), 'border', '1px solid #d3d3d3' );
+		$('#cui #cui_info').addClass('ui-state- ui-corner-all');
 	}catch (err){
 		console.log ('_cui ()' + err);	
 	}
 }
 
-function _cui_foot (){
+function _cui_nav (){
 	try {
-		$('#cui #cui_foot').hide ();
-		_cui_btn ('#cui .more', 'gear', true);
-		_cui_css ($('#cui .more'), 'float', 'right' );
+		$('#cui #cui_info').hide ();
+		_cui_btn ('#cui .github', 'person', true);
+		_cui_btn ('#cui .more', 'plus', true);
+		
 		$('#cui .more').click (function (){
-			$('#cui #cui_foot').fadeIn ();
+			$('#cui #cui_info').fadeIn ();
 			$(this).hide ();
 			return false;
 		});
