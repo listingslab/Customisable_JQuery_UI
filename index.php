@@ -98,16 +98,16 @@ to do just that.</h3>
 <div style="margin:15px;">
 	<p><strong>Main Colours</strong></p>
 	<input type='color' name="on" class='spectrum' value='<?php print $ui ['default'] ;?>' />
-	Default Colour		
+	Default		
 		<br />
 	<input type='color' name="off" class='spectrum' value='<?php print $ui ['hover'] ;?>' />
-	Hover Colour
+	Hover
 		<br />
 	<input type='color' name="over" class='spectrum' value='<?php print $ui ['active'] ;?>' />
-	Active Colour
+	Active
 		<br />
 	<input type='color' name="border" class='spectrum' value='<?php print $ui ['border'] ;?>' />
-	Border Colour
+	Border
 </div>
 <div style="margin:15px;">
 	<p><strong>Button Text Colour</strong></p>
