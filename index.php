@@ -1,19 +1,28 @@
 <?php
- 	global $ui;
-	$ui = array ();
-	// Default (unless overridden by GET variables)
-	$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
-	$ui ['icon'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
-	$ui ['font'] = 'Courier'; 
-	// colours
-	$ui ['default'] = '#3299cc'; // ll mid-blue
-	$ui ['hover'] = '#00b2ee'; // ll light	-blue
-	$ui ['active'] = '#00688b'; // ll dark-blue
-	$ui ['border'] = '#164a5b'; // darkest blue
-	$ui ['backround'] = '#f4f4f4'; // very light
-	$ui ['header'] = '#6bc7f5'; // bluish
-	$ui ['btn_text'] = '#ffffff'; // bright red
-	$ui ['content_text'] = '#222222'; // bright red
+global $ui;
+$ui = array ();
+$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
+ 	/*
+	 * The factory theme has these colors
+	 * which we will find and change
+	 * 
+	 * red border ff451a
+	 * 
+	 */
+	
+	$ui ['border'] = '#'; //ff451a
+ 	$ui ['highlight'] = '#'; //fffc00
+	$ui ['error'] = '#'; //cd0a0a
+	$ui ['default'] = '#'; //883589
+	$ui ['hover'] = '#'; //b86eb9
+	$ui ['active'] = '#'; //631064
+	$ui ['btn_text'] = '#'; //d8dff1
+	$ui ['content_bg'] = '#'; //f4f6fa
+	$ui ['content_text'] = '#'; //434672
+	$ui ['toolbar_bg'] = '#'; //a3a7b2
+	$ui ['toolbar_text'] = '#'; //434672
+	$ui ['icons'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
+	$ui ['font'] = 'Courier'; 	
 ?>
 <!doctype html>
 <html lang="en">
@@ -54,6 +63,10 @@ to do just that.</h3>
 		we keep the theme variables and files to a minimum. 
 		There are only 2 colours for icons, black and white.
 		There are no background images, just the basics</p>
+		
+		<a target="_blank" href="http://jqueryui.com/themeroller/?ffDefault=Lato&fwDefault=normal&fsDefault=1.1em&cornerRadius=5px&bgColorHeader=%23a3a7b2&bgTextureHeader=flat&bgImgOpacityHeader=0&borderColorHeader=%23ff451a&fcHeader=%23c8d7ff&iconColorHeader=%23000000&bgColorContent=%23f4f6fa&bgTextureContent=flat&bgImgOpacityContent=0&borderColorContent=%23ff451a&fcContent=%23434672&iconColorContent=%23000000&bgColorDefault=%23883589&bgTextureDefault=flat&bgImgOpacityDefault=0&borderColorDefault=%23ff451a&fcDefault=%23d8dff1&iconColorDefault=%23000000&bgColorHover=%23b86eb9&bgTextureHover=flat&bgImgOpacityHover=0&borderColorHover=%23ff451a&fcHover=%23d8dff1&iconColorHover=%23000000&bgColorActive=%23631064&bgTextureActive=flat&bgImgOpacityActive=0&borderColorActive=%23ff451a&fcActive=%23d8dff1&iconColorActive=%23000000&bgColorHighlight=%23fffc00&bgTextureHighlight=flat&bgImgOpacityHighlight=0&borderColorHighlight=%23ff451a&fcHighlight=%23000000&iconColorHighlight=%23000000&bgColorError=%23cd0a0a&bgTextureError=flat&bgImgOpacityError=0&borderColorError=%23ff451a&fcError=%23ffffff&iconColorError=%23ffffff&bgColorOverlay=%23000000&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=%23000000&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=0px&offsetTopShadow=0px&offsetLeftShadow=0px&cornerRadiusShadow=0px">
+			jQuery Theme
+		</a>
 			
 		<h4>Project Resources</h4>
 	<ul>
