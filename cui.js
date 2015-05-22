@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	try {
 		_cui ();
+		_cui_foot ();
 	}catch (err){
 		console.log ('Document.ready Error' + err);	
 	}
@@ -11,6 +12,7 @@ function _cui (){
 		console.log ('Customising a JQuery UI theme with PHP');
 		_cui_css ($('#cui'), 'width', '90%' );
 		_cui_css ($('#cui'), 'margin', 'auto' );
+		_cui_css ($('#cui a'), 'text-decoration', 'none' );
 		_cui_css ($('#cui'), 'font-family', 'Arial' );
 		
 		_cui_css ($('#cui #cui_left'), 'float', 'left' );
@@ -21,6 +23,21 @@ function _cui (){
 		//_cui_css ($('#cui #cui_right'), 'border', '1px solid black' );
 	}catch (err){
 		console.log ('_cui ()' + err);	
+	}
+}
+
+function _cui_foot (){
+	try {
+		$('#cui #cui_foot').hide ();
+		_cui_btn ('#cui .more', 'gear', true);
+		_cui_css ($('#cui .more'), 'float', 'right' );
+		$('#cui .more').click (function (){
+			$('#cui #cui_foot').fadeIn ();
+			$(this).hide ();
+			return false;
+		});
+	}catch (err){
+		console.log (err);
 	}
 }
 

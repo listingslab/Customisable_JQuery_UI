@@ -23,9 +23,15 @@
 	</head>
 	<body>
 <div id="cui">
-	<h1><a href="/">Customising a JQuery UI theme with PHP</a></h1>
-	<h3>Ever wished you could use PHP to change the colours of
-	a jQuery UI Theme dynamically? This project does just that</h3>
+
+<a class="more" href="?show=more">Learn More</a>
+
+<h1><a href="/">Customising a JQuery UI theme with PHP</a></h1>
+<p>Ever wished you could use PHP to change the colours of
+a jQuery UI Theme dynamically? This project does just that</p>
+
+	
+	
 	
 	<div id="cui_right">
 		<button id="button">A button element</button>
@@ -61,9 +67,9 @@
 			</ul>
 			<input type="submit" value="Configure Now" />
 		</form>
-	
 	</div>
 	<div style="clear:both;"></div>
+	
 	<div id="cui_foot">
 		
 		<h3>Getting Started</h3>

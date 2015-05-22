@@ -1,4 +1,4 @@
-# Customisable JQuery UI
+# Customising JQuery UI with PHP
 
 Ever wished you could use PHP to change the colours of
 a jQuery UI Theme dynamically? This project does just that
