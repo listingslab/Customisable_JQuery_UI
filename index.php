@@ -1,13 +1,13 @@
 <?php
 	$ui = array ();
 	// Default (unless overridden by GET variables)
-	$ui ['on'] = 'yellow';
-	$ui ['off'] = 'orange';
-	$ui ['over'] = 'red';
-	$ui ['text'] = 'purple';
+	$ui ['default'] = '#cd1acf';
+	$ui ['hover'] = '#2632d1';
+	$ui ['active'] = '#29f014';
+	$ui ['border'] = '#8d8d8d';
 	$ui ['font'] = 'Arial';
 	$ui ['text'] = 'black'; // black or white
-	$ui ['border'] = 'pink';
+	$ui ['icon'] = 'black'; // black or white
 	$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
 ?>
 <!doctype html>
@@ -18,6 +18,9 @@
 		<meta name="viewport" content="width=device-width">
 		<script src="<?php print $ui ['ui_folder'];?>external/jquery/jquery.js"></script>
 		<script src="<?php print $ui ['ui_folder'];?>jquery-ui.js"></script>
+		<script src='spectrum/spectrum.js'></script>
+		<link rel='stylesheet' href='spectrum/spectrum.css' />
+		
 		<script src="cui.js"></script>
 		<link href="<?php print $ui ['ui_folder'];?>jquery-ui.css" rel="stylesheet">
 	</head>
@@ -58,7 +61,22 @@ to do just that.</h3>
 	
 	
 <div id="cui_right"><div class="padded">
+<a class="cui_btn" href="?dialog=show">Show Dialog</a>
+<div id="accordion">
+	<h3>First</h3>
+	<div>
+		Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet. 
+		Lorem ipsum dolor sit amet.
+	</div>
+	<h3>Second</h3>
+	<div>Phasellus mattis tincidunt nibh.</div>
+	<h3>Third</h3>
+	<div>Nam dui erat, auctor a, dignissim quis.</div>
+</div>
 	
+	
+	<!--
 	<div class="ui-widget">
 		<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
 			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
@@ -71,24 +89,45 @@ to do just that.</h3>
 			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
 			<strong>Alert:</strong> Sample ui-state-error style.</p>
 		</div>
-	</div>
+	</div>-->
 </div></div>
 	
 	
 <div id="cui_left"><div class="padded">
-	<form method="get">
-		<p>Configure UI Theme</p>
-		<input type="hidden" name="hidethis" value="dwqeqw" />
-		<ul>
-			<li>Default Button Background Colour</li>
-			<li>Active Button Background Colour</li>
-			<li>Over Button Background Colour</li>
-			<li>Text Colour</li>
-			<li>Icon Colour</li>
-			<li>Border Colour</li>
-			<li>Font</li>
-		</ul>
-		<input type="submit" value="Configure Now" />
+<form method="get">
+<div style="margin:15px;">
+	<p><strong>Main Colours</strong></p>
+	<input type='color' name="on" class='spectrum' value='<?php print $ui ['default'] ;?>' />
+	Default Colour		
+		<br />
+	<input type='color' name="off" class='spectrum' value='<?php print $ui ['hover'] ;?>' />
+	Hover Colour
+		<br />
+	<input type='color' name="over" class='spectrum' value='<?php print $ui ['active'] ;?>' />
+	Active Colour
+		<br />
+	<input type='color' name="border" class='spectrum' value='<?php print $ui ['border'] ;?>' />
+	Border Colour
+</div>
+<div style="margin:15px;">
+	<p><strong>Button Text Colour</strong></p>
+	<input type="radio" name="text" value="black" checked />Black
+	<input type="radio" name="text" value="white" />White
+</div>
+<div style="margin:15px;">
+	<p><strong>Icon Colour</strong></p>
+	<input type="radio" name="icon" value="black" checked />Black
+	<input type="radio" name="icon" value="white" />White
+</div>
+<div style="margin:15px;">
+	<p><strong>Font Family</strong></p>
+	<input type="radio" name="font" value="Lato" checked />Lato
+	<br>
+	<input type="radio" name="font" value="Arial" />Arial
+	<br>
+	<input type="radio" name="font" value="Verdana" />Verdana
+</div>
+<input type="submit" value="Dynamically Create UI Theme" />
 	</form>
 </div></div>
 	

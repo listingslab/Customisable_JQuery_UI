@@ -1,12 +1,33 @@
 $(document).ready(function () {
 	try {
-		_cui ();
+		_cui_style ();
 		_cui_nav ();
+		_cui_spectrum ();
+		_cui_ui_widgets ();
 	}catch (err){
 		console.log ('Document.ready Error' + err);	
 	}
 });
-function _cui (){
+function _cui_ui_widgets (){
+	try {
+		$( "#accordion" ).accordion({
+			autoSize:true
+		});
+		_cui_css ($('#cui .cui_btn'), 'margin-bottom', '5px' );
+		_cui_btn ('#cui .cui_btn', 'gear', true);
+	}catch (err){
+		console.log (err);
+	}
+}
+function _cui_spectrum (){
+	try {
+		$('#cui .spectrum').spectrum ({
+		});
+	}catch (err){
+		console.log (err);
+	}
+}
+function _cui_style (){
 	try {
 		console.log ('Customising a JQuery UI theme with PHP');
 		_cui_css ($('#cui'), 'font-family', 'Arial' );
