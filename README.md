@@ -3,6 +3,9 @@
 Ever wished you could use PHP to change the colours of
 a jQuery UI Theme dynamically? This project does just that
 
+Listingslab Support
+http://wp.me/P5Q8N9-1eS
+
 ## Contents
 
 ## Features...
