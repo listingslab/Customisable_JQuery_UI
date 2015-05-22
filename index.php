@@ -66,46 +66,25 @@ to do just that.</h3>
 </div></div>
 	
 	
-<div id="cui_right"><div class="padded">
-<a class="cui_open_dialog" href="?dialog=show">Show Dialog</a>
-<br />
-<div id="dialog" title="Dialog Title">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<br />
+<div id="cui_ui">
 
-<div id="accordion">
-	<h3>First</h3>
-	<div>
-		Lorem ipsum dolor sit amet. 
-		Lorem ipsum dolor sit amet. 
-		Lorem ipsum dolor sit amet.
+	<div id="accordion">
+		<h3>First</h3>
+		<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+		<h3>Second</h3>
+		<div>Phasellus mattis tincidunt nibh.</div>
+		<h3>Third</h3>
+		<div>Nam dui erat, auctor a, dignissim quis.</div>
 	</div>
-	<h3>Second</h3>
-	<div>Phasellus mattis tincidunt nibh.</div>
-	<h3>Third</h3>
-	<div>Nam dui erat, auctor a, dignissim quis.</div>
+	<br />
+	<a href="?" class="open_dialog">Open Dialog</a>
+	<br />
+	<div id="dialog">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor est in enim ultricies, a congue diam iaculis. Ut lobortis purus sit amet tortor commodo, dapibus tristique sem fringilla. Suspendisse a leo in velit laoreet consequat. Cras sed vulputate arcu. Mauris pellentesque tempus viverra. Nullam bibendum mattis augue, a ullamcorper urna volutpat sed. Aenean aliquet arcu quis justo ultrices, eu consequat turpis ornare. Curabitur faucibus leo et augue vestibulum, at tristique arcu interdum. Sed nulla metus, maximus et efficitur eu, efficitur at libero. Aenean accumsan ut dui id mattis. Morbi mattis aliquet purus nec luctus. Nullam consectetur ante vel nisi lacinia semper.
+	</div>
+	<br />
+	<div id="datepicker"></div>
 </div>
-<br />
-<div id="datepicker"></div>
-
-	
-	
-	<!--
-	<div class="ui-widget">
-		<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
-			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
-			<strong>Hey!</strong> Sample ui-state-highlight style.</p>
-		</div>
-	</div>
-		<br>
-	<div class="ui-widget">
-		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
-			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
-			<strong>Alert:</strong> Sample ui-state-error style.</p>
-		</div>
-	</div>-->
-</div></div>
 	
 <!--
 <div id="cui_left"><div class="padded">

@@ -1,8 +1,4 @@
-/*! jQuery UI - v1.11.4 - 2015-05-22
-* http://jqueryui.com
-
-/* Layout helpers
-----------------------------------*/
+/*! jQuery UI - v1.11.4 */
 .ui-helper-hidden {
 	display: none;
 }
@@ -839,13 +835,11 @@ body .ui-tooltip {
 	font-size: 1em;
 }
 .ui-widget-content {
-	border: 1px solid #ff451a;
 }
 .ui-widget-content a {
 }
 .ui-widget-header {
-	border: 1px solid #ff451a;
-	font-weight: bold;
+
 }
 .ui-widget-header a {
 }
@@ -855,7 +849,6 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #ff451a;
 	background: #883589 url("images/ui-bg_flat_0_883589_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
@@ -870,7 +863,6 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #ff451a;
 	background: #b86eb9 url("images/ui-bg_flat_0_b86eb9_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
@@ -887,7 +879,6 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #ff451a;
 	background: #631064 url("images/ui-bg_flat_0_631064_40x100.png") 50% 50% repeat-x;
 	font-weight: normal;
 }
@@ -902,7 +893,6 @@ body .ui-tooltip {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #ff451a;
 	background: #fffc00 url("images/ui-bg_flat_0_fffc00_40x100.png") 50% 50% repeat-x;
 	color: #000000;
 }
@@ -914,7 +904,6 @@ body .ui-tooltip {
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-	border: 1px solid #ff451a;
 	background: #cd0a0a url("images/ui-bg_flat_0_cd0a0a_40x100.png") 50% 50% repeat-x;
 	color: #ffffff;
 }

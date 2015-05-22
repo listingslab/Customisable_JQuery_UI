@@ -3,16 +3,14 @@ $(document).ready(function () {
 		_cui_style ();
 		_cui_nav ();
 		_cui_colorpicker ();
-		_cui_ui_widgets ();
-	}catch (err){
-		console.log ('Document.ready Error' + err);	
-	}
-});
-function _cui_ui_widgets (){
-	try {
+		$( "#accordion" ).accordion();
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
 		$( "#dialog" ).dialog({
 			autoOpen: false,
-			modal: true,
+			modal:true,
+			title: 'Dialog Title',
 			width: 400,
 			buttons: [
 				{
@@ -29,23 +27,16 @@ function _cui_ui_widgets (){
 				}
 			]
 		});
-		_cui_btn ('#cui .cui_open_dialog', 'link', true);
-		$('#cui .cui_open_dialog').click (function (){
+		_cui_btn ('.open_dialog', 'star', true);
+		$('.open_dialog').click (function (){
 			$('#dialog').dialog ('open');
 			return false;
 		});
-		$( "#datepicker" ).datepicker({
-			inline: true
-		});
-		$( "#accordion" ).accordion({
-			autoSize:true
-		});
-		_cui_css ($('#cui .cui_btn'), 'margin-bottom', '5px' );
-		
 	}catch (err){
-		console.log (err);
+		console.log ('Document.ready Error' + err);	
 	}
-}
+});
+
 function _cui_colorpicker (){
 	try {
 		//$('.colour_picker').ColorPicker ();
