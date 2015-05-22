@@ -5,9 +5,6 @@ $ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
  	/*
 	 * The factory theme has these colors
 	 * which we will find and change
-	 * 
-	 * red border ff451a
-	 * 
 	 */
 	
 	$ui ['border'] = '#'; //ff451a
@@ -21,7 +18,7 @@ $ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
 	$ui ['content_text'] = '#'; //434672
 	$ui ['toolbar_bg'] = '#'; //a3a7b2
 	$ui ['toolbar_text'] = '#'; //434672
-	$ui ['icons'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
+	$ui ['icon'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
 	$ui ['font'] = 'Courier'; 	
 ?>
 <!doctype html>
@@ -82,11 +79,13 @@ to do just that.</h3>
 	
 <div id="cui_right"><div class="padded">
 <a class="cui_open_dialog" href="?dialog=show">Show Dialog</a>
+<br />
 <div id="dialog" title="Dialog Title">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
+<br />
 <div id="datepicker"></div>
-
+<br />
 <div id="accordion">
 	<h3>First</h3>
 	<div>
@@ -117,7 +116,7 @@ to do just that.</h3>
 	</div>-->
 </div></div>
 	
-	
+<!--
 <div id="cui_left"><div class="padded">
 <form method="get">
 <div style="margin:15px;">
@@ -154,7 +153,7 @@ to do just that.</h3>
 </div>
 <input type="submit" value="Dynamically Create UI Theme" />
 	</form>
-</div></div>
+</div></div>-->
 	
 	<div style="clear:both;"></div>
 		
