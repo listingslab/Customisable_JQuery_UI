@@ -22,6 +22,9 @@ $ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
 		<script src="cui.js"></script>
 		<link href="<?php print $ui ['ui_folder'];?>jquery-ui.css" rel="stylesheet">
 		<?php include 'css.php';?>
+		<style>body{
+			font-family:Lato;
+		}</style>
 	</head>
 	<body>
 <div id="cui">
@@ -70,8 +73,7 @@ to do just that.</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 <br />
-<div id="datepicker"></div>
-<br />
+
 <div id="accordion">
 	<h3>First</h3>
 	<div>
@@ -84,6 +86,9 @@ to do just that.</h3>
 	<h3>Third</h3>
 	<div>Nam dui erat, auctor a, dignissim quis.</div>
 </div>
+<br />
+<div id="datepicker"></div>
+
 	
 	
 	<!--

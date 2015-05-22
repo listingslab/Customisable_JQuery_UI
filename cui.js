@@ -59,7 +59,6 @@ function _cui_colorpicker (){
 function _cui_style (){
 	try {
 		console.log ('Customising a JQuery UI theme with PHP');
-		_cui_css ($('#cui'), 'font-family', 'Arial' );
 		_cui_css ($('#cui'), 'width', '90%' );
 		_cui_css ($('#cui'), 'margin', 'auto' );
 		_cui_css ($('#cui h1'), 'font-weight', 'normal' );
