@@ -1,15 +1,16 @@
 <?php
-	global $ui;
+ 	global $ui;
 	$ui = array ();
 	// Default (unless overridden by GET variables)
-	$ui ['default'] = '#cd1acf';
-	$ui ['hover'] = '#2632d1';
-	$ui ['active'] = '#29f014';
-	$ui ['border'] = '#8d8d8d';
-	$ui ['font'] = 'Arial';
-	$ui ['text'] = 'black'; // black or white
+	$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
+	$ui ['default'] = '#3299cc'; // ll mid-blue
+	$ui ['hover'] = '#00b2ee'; // ll light	-blue
+	$ui ['active'] = '#00688b'; // ll dark-blue
+	$ui ['border'] = '#164a5b'; // darkest blue
+	$ui ['backround'] = '#f4f4f4'; // very light
+	$ui ['text'] = '#ff0000'; // bright red
+	$ui ['font'] = 'Arial'; 
 	$ui ['icon'] = 'black'; // black or white
-	$ui ['ui_folder'] = 'jquery-ui/';
 ?>
 <!doctype html>
 <html lang="en">

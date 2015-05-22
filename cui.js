@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	try {
-		//_cui_style ();
+		_cui_style ();
 		_cui_nav ();
 		_cui_colorpicker ();
 		_cui_ui_widgets ();
