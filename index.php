@@ -3,14 +3,17 @@
 	$ui = array ();
 	// Default (unless overridden by GET variables)
 	$ui ['ui_folder'] = 'jquery-ui-1.11.4.custom/';
+	$ui ['icon'] = $ui ['ui_folder'].'images/ui-icons_white.png'; // black or white
+	$ui ['font'] = 'Courier'; 
+	// colours
 	$ui ['default'] = '#3299cc'; // ll mid-blue
 	$ui ['hover'] = '#00b2ee'; // ll light	-blue
 	$ui ['active'] = '#00688b'; // ll dark-blue
 	$ui ['border'] = '#164a5b'; // darkest blue
 	$ui ['backround'] = '#f4f4f4'; // very light
-	$ui ['text'] = '#ff0000'; // bright red
-	$ui ['font'] = 'Arial'; 
-	$ui ['icon'] = 'black'; // black or white
+	$ui ['header'] = '#6bc7f5'; // bluish
+	$ui ['btn_text'] = '#ffffff'; // bright red
+	$ui ['content_text'] = '#222222'; // bright red
 ?>
 <!doctype html>
 <html lang="en">
@@ -65,8 +68,10 @@ to do just that.</h3>
 	
 	
 <div id="cui_right"><div class="padded">
-<a class="cui_btn" href="?dialog=show">Show Dialog</a>
-
+<a class="cui_open_dialog" href="?dialog=show">Show Dialog</a>
+<div id="dialog" title="Dialog Title">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 <div id="datepicker"></div>
 
 <div id="accordion">

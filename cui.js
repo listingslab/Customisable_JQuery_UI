@@ -10,6 +10,30 @@ $(document).ready(function () {
 });
 function _cui_ui_widgets (){
 	try {
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			modal: true,
+			width: 400,
+			buttons: [
+				{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				{
+					text: "Cancel",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+		_cui_btn ('#cui .cui_open_dialog', 'link', true);
+		$('#cui .cui_open_dialog').click (function (){
+			$('#dialog').dialog ('open');
+			return false;
+		});
 		$( "#datepicker" ).datepicker({
 			inline: true
 		});
@@ -17,7 +41,7 @@ function _cui_ui_widgets (){
 			autoSize:true
 		});
 		_cui_css ($('#cui .cui_btn'), 'margin-bottom', '5px' );
-		_cui_btn ('#cui .cui_btn', 'gear', true);
+		
 	}catch (err){
 		console.log (err);
 	}
